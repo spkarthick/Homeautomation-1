@@ -1,0 +1,30 @@
+
+login {
+	display: table;
+	height:100%;
+}
+
+.center-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.center-cell>.row {
+	width: 290px;
+    padding: 25px;
+	margin:auto;
+	border: 1px solid #dfdfdf;
+    box-shadow: 4px 6px 10px #dcdcdc;
+}
+
+.brandname {
+	font-size: 24px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.ng-dirty.ng-invalid {
+	border-color: #a94442;
+}

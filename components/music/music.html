@@ -1,0 +1,12 @@
+<header>
+	<i class="fa fa-angle-left fonticon-tiny" ng-click="$root.goBack()"></i><span class="text-small">Playlist</span>
+</header>
+<div>
+	<ul class="list-group playlist">
+	  <li class="list-group-item" ng-repeat="music in music.playlist" ng-click="vm.onMusicSelect(music)" ng-class="{'active': music.active}">
+		<h4 class="list-group-item-heading" ng-bind="music.artist"></h4>
+		<p class="list-group-item-text" ng-bind="music.name"></p>
+	  </li>
+	</ul>
+	<div ng-if="!music.playlist.length" class="text-center">No Songs in Playlist</div> 
+</div>

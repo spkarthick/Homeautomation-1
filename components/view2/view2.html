@@ -1,0 +1,40 @@
+<div class="dashboard">
+	<div class="container-fluid fill-height">
+		<div class="row fill-height">
+			<div class="quick-panel-scroller" auto-scroll>
+				<div>
+					<div class="col-xs-12 fill-height quick-panel-items" ng-show="!widget.loading" ng-repeat="widget in vm.widgets">
+						<h4 class="quick-panel-title" ng-bind="widget.widgetTitle">Weather Outside</h4>
+						<table class="quick-panel" ng-if="!widget.mergedContent">
+							<col width="25%" />
+							<col width="50%" />
+							<col width="25%" />
+							<tr>
+								<td><i class="{{widget.icon}} fonticon-{{widget.iconSize}}"></i></td>
+								<td class="text text-{{widget.textSize}}"><div ng-bind-html="widget.title"></div></td>
+								<td><div ng-bind-html="widget.text"></div></td>
+							</tr>
+						</table>
+						<table class="quick-panel" ng-if="widget.mergedContent">
+							<col width="25%" />
+							<col width="75%" />
+							<tr>
+								<td><i class="{{widget.icon}} fonticon-{{widget.iconSize}}"></i></td>
+								<td class="text text-{{widget.textSize}}"><div ng-bind-html="widget.title"></div></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="control-panel">
+	<table>
+		<tbody>
+			<tr>
+				<td ng-repeat="device in vm.devices" ng-class="{'active': device.status}" ng-click="vm.deviceSelect(device)"><i class="{{device.icon}}"></i></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

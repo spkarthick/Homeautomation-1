@@ -1,0 +1,24 @@
+{
+  "name": "angular-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple boilerplate for angular applications",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-minify": "0.0.14",
+    "gulp-remove-code": "^1.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-watch": "^4.3.10",
+    "open": "0.0.5",
+    "yargs": "^5.0.0"
+  }
+}
