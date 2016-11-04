@@ -1,0 +1,10 @@
+<header>
+	<i class="fa fa-angle-left fonticon-tiny" ng-click="$root.goBack()"></i><span class="text-small">Channels</span>
+</header>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-6 offset-top-10" ng-repeat="channel in vm.channels">
+			<button class="btn btn-primary" style="margin:20px 0px 0px;width:100%;" ng-click="vm.changeChannel(channel.number)"><!--<img ng-src="channel.image"/>-->{{channel.name}}</button>
+		</div>
+	</div>
+</div>

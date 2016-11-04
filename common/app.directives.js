@@ -8,7 +8,7 @@
 		view2Service.deviceStream.onMessage(function(message) {
 			view2Service.devices = JSON.parse(message.data);
 		});
-		alarmService.start(22,43);
+		alarmService.start(7,0);
 	}]);
 	
 	myApp.directive("version", function() {

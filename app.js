@@ -11,6 +11,7 @@
 		"login",
 		"footer",
 		"alarm",
+		"tv",
 		"ngWebSocket"
 	]);
 	

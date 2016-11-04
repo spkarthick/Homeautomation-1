@@ -13,9 +13,9 @@
 	module.directive("autoScroll", function($interval){
 		return {
 			link: function(scope, elem) {
-				var count = 3;
+				var count = scope.vm.widgets.length;
 				$interval(function(){
-					if(count != 4) {
+					if(count != scope.vm.widgets.length) {
 						$(elem[0]).animate({'scrollTop': count * elem.height()});
 						count++;
 					}
@@ -23,7 +23,7 @@
 						$(elem[0]).animate({'scrollTop': 0});
 						count = 0;
 					}
-				},5000);
+				},2000);
 			}
 		};
 	});
